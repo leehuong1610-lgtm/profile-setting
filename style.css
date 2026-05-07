@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 78px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    position: sticky;
+    top: 159px;
+}
+
+.icon {
+    cursor: pointer;
+    display: flex;
+    padding: 17px 27px;
+}
+
+.icon.active {
+    background: linear-gradient(269.84deg, rgba(65, 130, 249, 0.12) 38.97%, rgba(65, 130, 249, 0.03) 90.01%);
+}
+
+.main-content {
+    flex: 1;
+    padding: 32px 40px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.welcome h1 {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #3E435D;
+}
+
+.welcome span {
+    color: #ADA7A7;
+    font-weight: 400; 
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+.header-tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    border-radius: 8px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.search-bar input {
+    padding: 14px 20px 14px 60px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    width: 354px;
+}
+
+.search-input {
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    background-image: url(image/search-normal.svg);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+
+.search-input::placeholder {
+    color: #ADA7A7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.notification {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    cursor: pointer;
+}
+
+.mini-avatar {
+    border-radius: 8px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.banner {
+    height: 100px;
+    background-image: url(image/banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-body {
+    padding: 0px 32px 71px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.name-box h2 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.name-box p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 50%;
+}
+
+.btn-edit {
+    width: 93px;
+    height: 44px;
+    background: #4e82f7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 25px;
+}
+
+.form-group label {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: #F9F9F9;
+}
+
+.form-group input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.drop-down {
+    background-image: url(image/dropDown.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.email-section {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 266px;
+    width: 100%;
+}
+
+.email-section h3 {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.email-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.email-icon {
+    width: 48px;
+    height: 48px;
+    background-color: hsl(219, 94%, 62% , 10%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.email-details strong {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.email-details span {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 50%;
+}
+
+.btn-add-email {
+    background-color: hsl(219, 94%, 62% , 10%);
+    color: #4182F9;
+    border: none; 
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    max-width: 209px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+
+   
+
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .search-bar input {
+        width: 250px; /* Thu nhỏ ô search */
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .header-tools {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-bar {
+        flex: 1;
+    }
+
+    .search-bar input {
+        width: 100%; /* Ô search chiếm hết chỗ còn lại */
+    }
+
+    /* Quan trọng: Chuyển Form từ 2 cột về 1 cột */
+    .form-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .user-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-edit {
+        width: 100%; /* Nút Edit to ra cho dễ bấm trên mobile */
+    }
+
+    .email-section {
+        max-width: 100%; /* Email Section chiếm hết chiều rộng */
+    }
+
+    .btn-add-email {
+        max-width: 100%;
+    }
+}
+
+/* 3. Dành cho màn hình siêu nhỏ (Dưới 480px) */
+@media (max-width: 480px) {
+    .welcome h1 {
+        font-size: 20px;
+    }
+    
+    .profile-body {
+        padding: 20px 15px;
+    }
+}
