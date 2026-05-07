@@ -171,14 +171,14 @@ body {
 }
 
 .name-box h2 {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     letter-spacing: 0px;
     color: #000000;
 }
 
 .name-box p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     letter-spacing: 0px;
     color: #000000;
@@ -322,7 +322,7 @@ body {
     }
 
     .search-bar input {
-        width: 250px; /* Thu nhỏ ô search */
+        width: 250px; 
     }
 }
 
@@ -343,10 +343,9 @@ body {
     }
 
     .search-bar input {
-        width: 100%; /* Ô search chiếm hết chỗ còn lại */
+        width: 100%; 
     }
 
-    /* Quan trọng: Chuyển Form từ 2 cột về 1 cột */
     .form-grid {
         grid-template-columns: 1fr; 
     }
@@ -364,11 +363,11 @@ body {
     }
 
     .btn-edit {
-        width: 100%; /* Nút Edit to ra cho dễ bấm trên mobile */
+        width: 100%; 
     }
 
     .email-section {
-        max-width: 100%; /* Email Section chiếm hết chiều rộng */
+        max-width: 100%; 
     }
 
     .btn-add-email {
@@ -376,7 +375,6 @@ body {
     }
 }
 
-/* 3. Dành cho màn hình siêu nhỏ (Dưới 480px) */
 @media (max-width: 480px) {
     .welcome h1 {
         font-size: 20px;
